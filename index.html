@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Megga Mart</h1>
+    <h2 id="your">Your Complete Shopping Destination.</h2>
+
+    <ul id="buttons">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="bokks.html">Books</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+
+
+    <div id="productsearch">
+
+    <h2>Product Search</h2>
+
+    <div><input type="text" readonly placeholder="Search over 10,000" id="orange1"> <input type="submit" value="Search" id="orange2"> </div>
+
+    </div>
+
+
+    <h2>Feachurd Products</h2>
+
+    <table border="2px" id="table">
+        <tr class="line">
+          <th width="230">Products</th>
+          <th width="400">Description</th>
+          <th width="65">Price</th>
+          <th width="80">Stock</th>
+          <th width="180">Action</th>
+        </tr>
+        <tr>
+          <td> <img src="Headphone.avif" width="70" height="70"> <h3>Wireless Headphones</h3> </td>
+          <td> <p>Premium Noise-According Bluetooth Headphones</p> <ul> <li>40mm drivers</li> <li>30-Hours Battery</li> <li>IPX4 Waterproof</li> </ul> </td>
+          <td> <p> <s>$199.99</s> </p> <p>$149.99</p> </td>
+          <td>In Stock</td>
+          <td> <button class="line">Add to cart</button> <p>Available Quantities: 15</p> </td>
+        </tr>
+        <tr><td colspan="5"><hr></td></tr>
+        <tr>
+          <td> <img src="Smart Watch.webp" width="200" height="200"> <h3>Smart Watch</h3> </td>
+          <td> <p>Advanced Fitness Tracking Smart Watch</p> <ol> <li>Heart Rate Monitor</li> <li>GPS Tracking</li> <li>Water Resistant</li> </ol> </td>
+          <td>$89.99</td>
+          <td>Low Stock</td>
+          <td> <button class="line">Add to cart</button> </td>
+        </tr>
+      </table>
+
+
+
+      <h2>Create New Account</h2>
+
+      <form>
+
+      <fieldset style="border-color: purple;">
+        <legend style="background-color: purple;">Personle Information</legend>
+
+        <div> First Name: <input type="text" required> Last Name: <input type="text" required> Date of Birth: <input type="date" required> Gender: Male <input type="radio" name="Gender" required> Female <input type="radio" name="Gender" required> </div>
+
+      </fieldset>
+
+
+      <fieldset style="border-color: rgb(137, 27, 137);">
+        <legend style="background-color: rgb(137, 27, 137);">Account Details</legend>
+
+        <div> Email: <input type="email" required> Password: <input type="password" required> Phone Number: <input type="number" required> Subscribe to Newsletter: <input type="checkbox" required> </div>
+
+      </fieldset>
+
+      <div> <input type="submit" value="Create Account"> <input type="submit" value="Clear Form"> </div>
+
+
+      <fieldset style="border-color: rgb(137, 27, 137);">
+            <legend style="background-color: purple;">Shipping Address</legend>
+        
+        <div> Select Address: <textarea></textarea> Country: <input type="text"> ZIP Code: <input type="text"> </div>
+
+      </fieldset>
+      
+
+    </form>
+
+
+    <h2>Product Comparision</h2>
+
+    <table border="2px" id="red2">
+
+        <tr id="red">
+            <th>Feature</th>
+            <th width="130">Basic Model</th>
+            <th width="130">Pro Model</th>
+            <th width="175">Premium Model</th>
+        </tr>
+
+        <tr>
+            <td>Battery Life</td>
+            <td>8 Hours</td>
+            <td>12 Hours</td>
+            <td>24 Hours</td>
+        </tr>
+
+        <tr>
+            <td>Water REsistance</td>
+            <td>IPX4</td>
+            <td>IPX7</td>
+            <td>IP68</td>
+        </tr>
+
+        <tr>
+            <td>Warranty</td>
+            <td>1 Year</td>
+            <td colspan="2">2 Year</td>
+        </tr>
+
+        <tr>
+            <td colspan="4" id="red3">*All Prices Include VAT</td>
+        </tr>
+
+    </table>
+
+
+    <h2>Checkout Process</h2>
+
+    <form action="">
+
+        <fieldset>
+                <legend>Payment Information</legend>
+        
+            <div> Card Type: <input type="radio" required name="Cardtype"> Visa <input type="radio" required name="Cardtype"> Master Card <input type="radio" required name="Cardtype"> American Express </div>
+            <div> Card Number: <input type="text" required> Expiray Date: <label for="month" aria-required="">Select Month and Year:</label><input type="month" id="month" name="month" style="padding: 5px; font-size: 14px;" required> </div>
+
+        </fieldset>
+    
+
+        <fieldset>
+                <legend>Order Summary</legend>
+
+            <table border="2px">
+
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            
+                <tr>
+                    <td>Wireless Headphones</td>
+                    <td>2</td>
+                    <td>$299.98</td>
+                </tr>
+
+                <tr>
+                    <td>Shipping</td>
+                    <td>-</td>
+                    <td>$15.00</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">Total:</td>
+                    <td>$314.98</td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <input type="submit" value="Complete Purchase">
+
+    </form>
+
+
+    <h2>Product Video</h2>
+
+    <video src="Car Video.mp4" controls poster="Video Thumbnail.jpg" autoplay width="500" height="300"></video>
+
+    <h2>Product Audio Description</h2>
+
+    <audio src="mp3 Audio.m4a" controls></audio>
+
+    <div id="darkgray">
+
+    <h2> <i> Contact US </i> </h2>
+
+    <div> <i>Email</i> <a href="mailto:m.hanzla9169@gmail.com">m.hanzla9169@gmail.com</a> </div>
+
+    <br>
+
+    <div> <i>Phone</i> <a href="tel:+92(314)-116-2974">+92(314)-116-2974"</a> </div>
+
+    <br>
+
+    <div> <address> Address: 123 stree <br> New Yourk, NY 1000l</address> </div>
+
+    </div>
+
+    <h2>Location</h2>
+
+    <p>Here is our Location</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.9095832650833!2d67.1981875!3d24.8669375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb331004a2aa071%3A0xf2e132e72edf7754!2sSMIT%20Malir%20Campus!5e0!3m2!1sen!2s!4v1742770641995!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <p>Chect out the Latest Video </p>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=pKlgHZtGfYh1Hnkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div id="last">
+
+    <h2>Quick Links</h2>
+
+
+    <ul>
+        <li> <a href="termsofservices.html">Term of Services</a> </li>
+        <li> <a href="privacypolicy.html">Privacy Policy</a> </li>
+        <li> <a href="returnpolicy.html">Return Policy</a> </li>
+    </ul>
+
+
+    <p>&copy; 2025 MegaMart. All Rights Reserved.</p>
+
+
+    <p>Follow US on <a href="https://www.instagram.com/rapid_karachi/" target="_blank">SOCIAL MEDIA</a></p>
+
+    </div>
+
+
+
+
+</body>
+</html>

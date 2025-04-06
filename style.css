@@ -1,0 +1,49 @@
+#your {
+    color: gray;
+}
+
+#buttons{
+    background-color: rgb(44, 109, 156);
+}
+
+#productsearch{
+    background: linear-gradient(rgb(197, 155, 40),rgb(213, 198, 34))
+}
+
+#orange1{
+    border-color: rgb(255, 166, 0);
+}
+
+#orange2{
+    border-color:rgb(255, 166, 0) ;
+    background-color:rgb(255, 217, 0) ;
+}
+
+#table{
+    border-color: rgb(83, 250, 83);
+}
+
+.line{
+    background-color: rgb(33, 154, 33);
+    border-color: rgb(83, 250, 83);
+}
+
+#red{
+    background-color: red;
+}
+
+#red2{
+    border-color: rgb(255, 52, 52);
+}
+
+#red3{
+    background-color: rgb(255, 116, 116);
+}
+
+#darkgray{
+    background-color:rgb(1, 136, 151);
+}
+
+#last{
+    background-color:rgb(1, 136, 151); ;
+}
